@@ -17,10 +17,14 @@ i{
 a{
     color: white;
 }
+header{
+    width: 100%;
+}
 .nav{background-color:rgb(100, 100, 100, 0.8);
     display: flex;
     align-items: center;
     justify-content: space-around;
+    width: 100%;
 }
 .header_main{
     display: flex;
@@ -73,17 +77,19 @@ a{
     color: white;
 }
 .imagenes_paisajes{
-    position: relative;
-    left:25%; 
+    display: flex;
+    justify-content: center;
+}
+.contenido_interior{
     display: flex;
     margin-top: 50px;
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
     width: 1000px;
-    
+
 }
-.imagenes_paisajes p{
+.contenido_interior p{
     background-color: rgb(100, 100, 100, 0.7);
     width: 100%;
     height: 20%;
@@ -91,7 +97,8 @@ a{
     color: white;
     padding-top: 15px;
     padding-left: 5%;
-}
+}    
+
 .magdalena {
     background-image: url("../../public/images/santamarta.jpeg");
     width: 300px;
@@ -138,21 +145,37 @@ a{
 .zona_compartida{
     margin-top: 10%;
     display: flex;
-    width: 1000px;
+    width: 1300px;
     justify-content: center;
-    
-
+    gap: 10px;
 }
 .imagenes_paisajes_2{
-    width: 1000px
+    width: 50%;
+    margin-bottom: 100px;
 }
 .serpiente_python{
     display: flex;
+    align-items: center;
+    width: 100%;
+}
+.serpiente_python h3{
+    padding-bottom: 2%;
+    color: blue;
+}
+.serpiente_python p{
+    padding-bottom: 2%;
+}
+.parte_inferior{
+    display: flex;
+    justify-content: space-between;
 }
 .serpiente_python img{
     width: 200px;
     height: 150px;
     padding-right: 10px;
+}
+.serpiente_python a{
+    color: blue;
 }
 .hr{
     border-top: 2px solid;
@@ -161,25 +184,42 @@ a{
     margin-top: 5px;
     margin-bottom: 5px;
 }
+.zona_anuncios{
+    width: 25%;
+}
+.zona_anuncios img{
+    max-width:200px;
+}
 footer{
     display: flex;
     justify-content: center;
     width: 100%;
+    height: 100px;
     background-color: black;
 }
 .newsletter{
+    display: flex;
+    justify-content: center;
     color: white;
+    padding-bottom: 10px;
+}
+.correo{
+    padding-bottom: 10px;
+}
+.correo input{
+    border-top-left-radius:10px ;
+    border-top-right-radius:10px ;
+    border-bottom-left-radius:10px ;
+    border-bottom-right-radius: 10px;
 }
 .redes_sociales_2{
-    width: 100%;
     display: flex;
     align-items: center;
-    padding-right: 40%;
+    justify-content: center;
     gap: 15px;
 
 }
 .facebook_2{
-    
     padding: 5px ;
     border-radius: 100%;
     color: white;
